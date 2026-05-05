@@ -1,5 +1,8 @@
-// This file uses `var` intentionally.
-// biome's noVar rule would flag this — UNLESS biome.json with noVar: off is applied.
-// Test: if qlty check flags this, it means .qlty/configs/biome.json is NOT being used.
-var message = "hello world";
-console.log(message);
+// noDoubleEquals is in biome's recommended rules — flags `==` instead of `===`.
+// .qlty/configs/biome.json sets noDoubleEquals: off.
+// If the config IS applied → no issue here.
+// If the config is NOT applied (bug) → biome flags this line.
+const x: unknown = null;
+if (x == null) {
+  console.log("x is null or undefined");
+}

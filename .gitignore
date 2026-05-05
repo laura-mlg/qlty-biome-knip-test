@@ -1,2 +1,3 @@
 node_modules/
 .qlty/out/
+package-lock.json
