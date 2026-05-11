@@ -23,6 +23,9 @@ Reproduces the bug where configs in `.qlty/configs/` are not passed to biome or 
 
 ## How to run
 
+<!-- test commit: app suspension behavior 2026-05-11 -->
+
+
 ```bash
 qlty check --all
 qlty check --all --filter=biome
