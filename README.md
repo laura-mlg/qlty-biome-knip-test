@@ -24,6 +24,7 @@ Reproduces the bug where configs in `.qlty/configs/` are not passed to biome or 
 ## How to run
 
 <!-- test commit: app suspension behavior 2026-05-11 -->
+<!-- test PR: app unsuspended 2026-05-11 -->
 
 
 ```bash
